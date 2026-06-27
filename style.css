@@ -16,14 +16,19 @@
 }
 
 header{
-    display: flex;
-    flex-direction: row;
     background-color: var(--cor-5);
     padding: 2em;
     justify-content: center;
     border-radius: 0 0 1em 1em;
     transition: all 0.5s ease-in-out;
     border-bottom: var(--cor-6) solid 0.25em;
+}
+
+.flex-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header:hover{
@@ -37,12 +42,17 @@ header:hover{
 #icon-code:hover{
     transform: translateY(-0.5em);
 }
-
-header > h1{
+h1{
     transition: all 1s ease-in-out;
 }
+h1:hover{
+    transform: translateY(-0.5em);
+}
 
-header > h1:hover{
+p{
+    transition: all 1s ease-in-out;
+}
+p:hover{
     transform: translateY(-0.5em);
 }
 
@@ -50,7 +60,7 @@ body{
     background-color: var(--bg-cor);
 }
 
-.container{
+.menu-container{
     width: 90%;
     background-color: white;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
@@ -73,7 +83,22 @@ body{
     margin-top: 1em;
 }
 
-article{
+.card-number{
+    padding: 0.25em;
+    background-color: #19F8FC;
+    color: #6b7c7c;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 0.25em;
+    margin-top: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+article,  .summary-grid{
     padding: 0.5em;
     background-color: #ccedee;
     width: 80%;
