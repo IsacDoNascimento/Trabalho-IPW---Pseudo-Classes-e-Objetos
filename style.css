@@ -48,14 +48,12 @@ h1{
 h1:hover{
     transform: translateY(-0.5em);
 }
-
-p{
+section{
     transition: all 1s ease-in-out;
 }
-p:hover{
+section:hover{
     transform: translateY(-0.5em);
 }
-
 body{
     background-color: var(--bg-cor);
 }
