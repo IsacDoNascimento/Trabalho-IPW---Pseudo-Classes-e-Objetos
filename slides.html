@@ -6,30 +6,30 @@
     <title>Apresentação - Slides</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="slides-body">
+<body>
 
-    <a href="index.html" class="back-to-menu">Sumário</a>
+    <a href="index.html" class="Sumário">= Sumário</a>
 
-    <div class="slides-container">
+    <div class="tópicos">
 
-        <section id="slide-1" class="slide">
-            <div class="slide-content">
+        <section id="t1" class="tópico">
+            <div class="tópico1_assunto">
                 <h2>01. Introdução</h2>
                 <hr>
                 <p><strong>O que são?</strong> Recursos do CSS que permitem selecionar e estilizar elementos com base em estados específicos ou partes invisíveis do HTML.</p>
-                <div class="syntax-box">
-                    <p><code>element:pseudo-class</code> <small>(Um sinal de dois pontos)</small></p>
-                    <p><code>element::pseudo-element</code> <small>(Dois sinais de dois pontos - CSS3)</small></p>
+                <div class="Exemplos_t1">
+                    <p><code>element:pseudo-class</code> <small>(Um sinal de dois pontos).</small></p>
+                    <p><code>element::pseudo-element</code> <small>(Dois sinais de dois pontos - CSS3).</small></p>
                 </div>
             </div>
-            <div class="slide-nav">
-                <a href="index.html" class="nav-btn">Início</a>
-                <a href="#slide-2" class="nav-btn next">Próximo ➔</a>
+            <div class="nav">
+                <a href="index.html" class="início">Início</a>
+                <a href="#t2" class="próximo">Próximo</a>
             </div>
         </section>
 
-        <section id="slide-2" class="slide">
-            <div class="slide-content">
+        <section id="t2" class="tópico">
+            <div class="tópico2_assunto">
                 <h2>02. Pseudo-classes (Estados e Posições)</h2>
                 <hr>
                 <p>Selecionam elementos que estão em um estado específico do ciclo de navegação ou árvore estrutural.</p>
@@ -39,14 +39,14 @@
                     <li><strong>Formulários:</strong> <code>:required</code>, <code>:valid</code>, <code>:invalid</code></li>
                 </ul>
             </div>
-            <div class="slide-nav">
-                <a href="#slide-1" class="nav-btn">⬅ Anterior</a>
-                <a href="#slide-3" class="nav-btn next">Próximo ➔</a>
+            <div class="nav">
+                <a href="#t1" class="anterior">Anterior</a>
+                <a href="#t3" class="próximo">Próximo</a>
             </div>
         </section>
 
-        <section id="slide-3" class="slide">
-            <div class="slide-content">
+        <section id="t3" class="tópico">
+            <div class="tópico3_assunto">
                 <h2>03. Pseudo-elementos (Pseudo-objetos)</h2>
                 <hr>
                 <p>Servem para criar ou injetar sub-partes virtuais dentro de um elemento sem mexer no arquivo HTML.</p>
@@ -56,30 +56,30 @@
                     <li><strong>Interface:</strong> <code>::selection</code> (muda a cor do texto selecionado) e <code>::placeholder</code>.</li>
                 </ul>
             </div>
-            <div class="slide-nav">
-                <a href="#slide-2" class="nav-btn">⬅ Anterior</a>
-                <a href="#slide-4" class="nav-btn next">Próximo ➔</a>
+            <div class="nav">
+                <a href="#t2" class="anterior">⬅ Anterior</a>
+                <a href="#t4" class="próximo">Próximo ➔</a>
             </div>
         </section>
 
-        <section id="slide-4" class="slide">
-            <div class="slide-content">
+        <section id="t4" class="tópico">
+            <div class="tópico4_assunto">
                 <h2>04. Demonstração Prática</h2>
                 <hr>
                 <p>Veja como criar um botão moderno com efeito de preenchimento lateral usando apenas CSS puro:</p>
-                <div class="demo-area">
-                    <button class="custom-button-demo">Passe o Mouse Aqui</button>
+                <div class="teste">
+                    <button class="teste_botão">Passe o Mouse Aqui</button>
                 </div>
                 <p><small>Este efeito utiliza <code>::before</code> para criar o fundo falso e <code>:hover::before</code> para expandi-lo.</small></p>
             </div>
-            <div class="slide-nav">
-                <a href="#slide-3" class="nav-btn">⬅ Anterior</a>
-                <a href="#slide-5" class="nav-btn next">Próximo ➔</a>
+            <div class="nav">
+                <a href="#t3" class="anterior">⬅ Anterior</a>
+                <a href="#t5" class="próximo">Próximo ➔</a>
             </div>
         </section>
 
-        <section id="slide-5" class="slide">
-            <div class="slide-content">
+        <section id="t5" class="tópico">
+            <div class="tópico5_assunto">
                 <h2>05. Boas Práticas e Acessibilidade</h2>
                 <hr>
                 <ul>
@@ -88,25 +88,25 @@
                     <li><strong>Foco Visível:</strong> Nunca remova o outline do <code>:focus</code> sem criar uma alternativa visual bacana para navegação via teclado.</li>
                 </ul>
             </div>
-            <div class="slide-nav">
-                <a href="#slide-4" class="nav-btn">⬅ Anterior</a>
-                <a href="#slide-6" class="nav-btn next">Próximo ➔</a>
+            <div class="nav">
+                <a href="#t4" class="anterior">⬅ Anterior</a>
+                <a href="#t6" class="próximo">Próximo ➔</a>
             </div>
         </section>
 
-        <section id="slide-6" class="slide">
-            <div class="slide-content">
+        <section id="t6" class="tópico">
+            <div class="tópico6_assunto">
                 <h2>06. Conclusão e Perguntas</h2>
                 <hr>
                 <p>O domínio de pseudo-classes e pseudo-elementos reduz drasticamente a necessidade de classes extras no HTML e scripts de JavaScript para efeitos visuais simples, tornando a folha de estilo muito mais poderosa.</p>
-                <div class="question-box">
+                <div class="perguntas">
                     <h3>Dúvidas?</h3>
                     <p>Obrigado pela atenção!</p>
                 </div>
             </div>
-            <div class="slide-nav">
-                <a href="#slide-5" class="nav-btn">⬅ Anterior</a>
-                <a href="index.html" class="nav-btn">Fim (Menu)</a>
+            <div class="nav">
+                <a href="#t5" class="anterior">⬅ Anterior</a>
+                <a href="index.html" class="próximo">Fim (Menu)</a>
             </div>
         </section>
 
