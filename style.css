@@ -24,7 +24,7 @@ header{
     border-bottom: var(--cor-6) solid 0.25em;
 }
 
-.flex-line{
+.flex-linha{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,24 +81,34 @@ body{
     font-size: 2em;
     border-radius: 0.5em;
     margin-top: 1em;
+    transition: all 0.5s ease-in-out;
 }
+
+.card-header:hover{
+    padding: 0.75em;
+}
+
 
 .card-number{
     padding: 0.25em;
     background-color: #19F8FC;
     color: #6b7c7c;
-    margin: auto;
     text-align: center;
     font-size: 1.5em;
     border-radius: 0.25em;
     margin-top: 1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-number{
+    padding: 0.5em;
 }
 
 a{
     text-decoration: none;
 }
 
-article,  .summary-grid{
+.summary-grid{
     padding: 0.5em;
     background-color: #ccedee;
     width: 80%;
@@ -108,12 +118,15 @@ article,  .summary-grid{
     border-radius: 0.5em;
     margin-top: 1em;
     list-style: none;
+    transition: all 0.5s ease-in-out;
+
 }
 
-article > ol{
+.summary-grid > ol{
     list-style: inside;
 }
 
-article > ol > li{
+.summary-grid > ol > li{
     margin: 1em 0;
 }
+
