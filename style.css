@@ -24,6 +24,10 @@ header{
     border-bottom: var(--cor-6) solid 0.25em;
 }
 
+nav{
+    justify-content: center;
+}
+
 .flex-linha{
     display: flex;
     flex-direction: row;
@@ -82,28 +86,17 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+hr{
+    margin-top: 2em;
+}
+
 .card-header:hover{
     padding: 0.75em;
 }
 
-
-.card-number{
-    padding: 0.25em;
-    background-color: #19F8FC;
-    color: #6b7c7c;
-    text-align: center;
-    font-size: 1.5em;
-    border-radius: 0.25em;
-    margin-top: 1em;
-    transition: all 0.5s ease-in-out;
-}
-
-.card-number{
-    padding: 0.5em;
-}
-
 a{
     text-decoration: none;
+    color: black;
 }
 
 .summary-grid{
@@ -116,8 +109,11 @@ a{
     border-radius: 0.5em;
     margin-top: 1em;
     list-style: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
+.summary-grid:hover{
+    transform: translateY(-0.5em);
 }
 
 .summary-grid > ol{
