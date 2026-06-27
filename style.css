@@ -53,7 +53,12 @@ h1:hover{
     transform: translateY(-0.5em);
 }
 section{
+    border: 0.25em solid rgb(128, 128, 128);
+    border-radius: 0.5em;
     transition: all 1s ease-in-out;
+    margin: 1em;
+    width: 95%;
+    margin: auto;
 }
 section:hover{
     transform: translateY(-0.5em);
@@ -99,7 +104,7 @@ a{
     color: black;
 }
 
-.summary-grid{
+.card-content{
     padding: 0.5em;
     background-color: #ccedee;
     width: 80%;
@@ -112,15 +117,25 @@ a{
     transition: all 1s ease-in-out;
 }
 
-.summary-grid:hover{
+.card-content:hover{
     transform: translateY(-0.5em);
 }
 
-.summary-grid > ol{
+.card-content > ol{
     list-style: inside;
 }
 
-.summary-grid > ol > li{
+.card-content > ol > li{
     margin: 1em 0;
 }
 
+.tópicos{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+
+}
+
+ul{
+    list-style: none;
+}
