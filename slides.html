@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação - Slides</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="slides-body">
+
+    <a href="index.html" class="back-to-menu">☰ Sumário</a>
+
+    <div class="slides-container">
+
+        <section id="slide-1" class="slide">
+            <div class="slide-content">
+                <h2>01. Introdução</h2>
+                <hr>
+                <p><strong>O que são?</strong> Recursos do CSS que permitem selecionar e estilizar elementos com base em estados específicos ou partes invisíveis do HTML.</p>
+                <div class="syntax-box">
+                    <p><code>element:pseudo-class</code> <small>(Um sinal de dois pontos)</small></p>
+                    <p><code>element::pseudo-element</code> <small>(Dois sinais de dois pontos - CSS3)</small></p>
+                </div>
+            </div>
+            <div class="slide-nav">
+                <a href="index.html" class="nav-btn">Início</a>
+                <a href="#slide-2" class="nav-btn next">Próximo ➔</a>
+            </div>
+        </section>
+
+        <section id="slide-2" class="slide">
+            <div class="slide-content">
+                <h2>02. Pseudo-classes (Estados e Posições)</h2>
+                <hr>
+                <p>Selecionam elementos que estão em um estado específico do ciclo de navegação ou árvore estrutural.</p>
+                <ul>
+                    <li><strong>Interação:</strong> <code>:hover</code>, <code>:focus</code>, <code>:active</code></li>
+                    <li><strong>Estruturais:</strong> <code>:nth-child()</code>, <code>:first-child</code>, <code>:last-child</code></li>
+                    <li><strong>Formulários:</strong> <code>:required</code>, <code>:valid</code>, <code>:invalid</code></li>
+                </ul>
+            </div>
+            <div class="slide-nav">
+                <a href="#slide-1" class="nav-btn">⬅ Anterior</a>
+                <a href="#slide-3" class="nav-btn next">Próximo ➔</a>
+            </div>
+        </section>
+
+        <section id="slide-3" class="slide">
+            <div class="slide-content">
+                <h2>03. Pseudo-elementos (Pseudo-objetos)</h2>
+                <hr>
+                <p>Servem para criar ou injetar sub-partes virtuais dentro de um elemento sem mexer no arquivo HTML.</p>
+                <ul>
+                    <li><strong>Os Pilares:</strong> <code>::before</code> e <code>::after</code> (exigem a propriedade <code>content</code>).</li>
+                    <li><strong>Tipografia:</strong> <code>::first-letter</code> (efeito capitular de revistas) e <code>::first-line</code>.</li>
+                    <li><strong>Interface:</strong> <code>::selection</code> (muda a cor do texto selecionado) e <code>::placeholder</code>.</li>
+                </ul>
+            </div>
+            <div class="slide-nav">
+                <a href="#slide-2" class="nav-btn">⬅ Anterior</a>
+                <a href="#slide-4" class="nav-btn next">Próximo ➔</a>
+            </div>
+        </section>
+
+        <section id="slide-4" class="slide">
+            <div class="slide-content">
+                <h2>04. Demonstração Prática</h2>
+                <hr>
+                <p>Veja como criar um botão moderno com efeito de preenchimento lateral usando apenas CSS puro:</p>
+                <div class="demo-area">
+                    <button class="custom-button-demo">Passe o Mouse Aqui</button>
+                </div>
+                <p><small>Este efeito utiliza <code>::before</code> para criar o fundo falso e <code>:hover::before</code> para expandi-lo.</small></p>
+            </div>
+            <div class="slide-nav">
+                <a href="#slide-3" class="nav-btn">⬅ Anterior</a>
+                <a href="#slide-5" class="nav-btn next">Próximo ➔</a>
+            </div>
+        </section>
+
+        <section id="slide-5" class="slide">
+            <div class="slide-content">
+                <h2>05. Boas Práticas e Acessibilidade</h2>
+                <hr>
+                <ul>
+                    <li><strong>Acessibilidade:</strong> Nunca insira conteúdos textuais vitais ou informativos dentro do <code>content</code> de um <code>::before</code> ou <code>::after</code>, pois leitores de tela podem ignorá-los.</li>
+                    <li><strong>Sintaxe Moderna:</strong> Use sempre a separação de dois pontos duplos (<code>::</code>) para pseudo-elementos para manter seu código atualizado conforme os padrões da W3C.</li>
+                    <li><strong>Foco Visível:</strong> Nunca remova o outline do <code>:focus</code> sem criar uma alternativa visual bacana para navegação via teclado.</li>
+                </ul>
+            </div>
+            <div class="slide-nav">
+                <a href="#slide-4" class="nav-btn">⬅ Anterior</a>
+                <a href="#slide-6" class="nav-btn next">Próximo ➔</a>
+            </div>
+        </section>
+
+        <section id="slide-6" class="slide">
+            <div class="slide-content">
+                <h2>06. Conclusão e Perguntas</h2>
+                <hr>
+                <p>O domínio de pseudo-classes e pseudo-elementos reduz drasticamente a necessidade de classes extras no HTML e scripts de JavaScript para efeitos visuais simples, tornando a folha de estilo muito mais poderosa.</p>
+                <div class="question-box">
+                    <h3>Dúvidas?</h3>
+                    <p>Obrigado pela atenção!</p>
+                </div>
+            </div>
+            <div class="slide-nav">
+                <a href="#slide-5" class="nav-btn">⬅ Anterior</a>
+                <a href="index.html" class="nav-btn">Fim (Menu)</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
