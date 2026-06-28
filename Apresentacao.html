@@ -82,27 +82,110 @@ a:active { color: #0000FF; }</code></br></pre>
                     </div>
                     <hr>
                     <div class="card-content">
-                        <table>
-                <thead>
-                    <tr><th>Propriedade</th><th>Exemplo Prático</th><th>Descrição do Comportamento</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td><code>:link</code></td><td><code>a:link</code></td><td>Link não visitado.</td></tr>
-                    <tr><td><code>:visited</code></td><td><code>a:visited</code></td><td>Link visitado.</td></tr>
-                    <tr><td><code>:hover</code></td><td><code>a:hover</code></td><td>Ativado quando o mouse está posicionado sobre o elemento.</td></tr>
-                    <tr><td><code>:active</code></td><td><code>a:active</code></td><td>Representa um elemento em estado de ativação temporária (o clique do mouse).</td></tr>
-                    <tr><td><code>:first-child</code></td><td><code>li:first-child</code></td><td>Captura o primeiro elemento filho contido em outro elemento.</td></tr>
-                    <tr><td><code>:focus</code></td><td><code>input:focus</code></td><td>Quando o elemento recebe foco do usuário (via teclado ou clique).</td></tr>
-                    <tr><td><code>:nth-child()</code></td><td><code>tr:nth-child(even)</code></td><td>Aplica um estilo num elemento de acordo com a posição do mesmo dentro da tag pai.</td></tr>
-                    <tr><td><code>:last-child</code></td><td><code>li:last-child</code></td><td>Aplica estilo no último elemento filho do elemento pai.</td></tr>
-                    <tr><td><code>:first-of-type</code></td><td><code>span:first-of-type</code></td><td>Aplica um estilo no primeiro elemento filho que corresponda exatamente àquele tipo de tag.</td></tr>
-                    <tr><td><code>:only-child</code></td><td><code>li:only-child</code></td><td>Aplica estilos a um elemento apenas quando ele é o único filho do seu elemento pai.</td></tr>
-                    <tr><td><code>:empty</code></td><td><code>div:empty</code></td><td>Aplica estilo em um elemento que não possui filho.</td></tr>
-                    <tr><td><code>:checked</code></td><td><code>input:checked</code></td><td>Representa um elemento (como radio, checkbox e options) que foi selecionado.</td></tr>
-                </tbody>
-            </table>
+                        
+                            <table>
+                                <thead>
+                                    <tr><th>Propriedade</th><th>Exemplo Prático</th><th>Descrição do Comportamento</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><code>:link</code></td><td><code>a:link</code></td><td>Link não visitado.</td></tr>
+                                    <tr><td><code>:visited</code></td><td><code>a:visited</code></td><td>Link visitado.</td></tr>
+                                    <tr><td><code>:hover</code></td><td><code>a:hover</code></td><td>Ativado quando o mouse está posicionado sobre o elemento.</td></tr>
+                                    <tr><td><code>:active</code></td><td><code>a:active</code></td><td>Representa um elemento em estado de ativação temporária (o clique do mouse).</td></tr>
+                                    <tr><td><code>:first-child</code></td><td><code>li:first-child</code></td><td>Captura o primeiro elemento filho contido em outro elemento.</td></tr>
+                                    <tr><td><code>:focus</code></td><td><code>input:focus</code></td><td>Quando o elemento recebe foco do usuário (via teclado ou clique).</td></tr>
+                                    <tr><td><code>:nth-child()</code></td><td><code>tr:nth-child(even)</code></td><td>Aplica um estilo num elemento de acordo com a posição do mesmo dentro da tag pai.</td></tr>
+                                    <tr><td><code>:last-child</code></td><td><code>li:last-child</code></td><td>Aplica estilo no último elemento filho do elemento pai.</td></tr>
+                                    <tr><td><code>:first-of-type</code></td><td><code>span:first-of-type</code></td><td>Aplica um estilo no primeiro elemento filho que corresponda exatamente àquele tipo de tag.</td></tr>
+                                    <tr><td><code>:only-child</code></td><td><code>li:only-child</code></td><td>Aplica estilos a um elemento apenas quando ele é o único filho do seu elemento pai.</td></tr>
+                                    <tr><td><code>:empty</code></td><td><code>div:empty</code></td><td>Aplica estilo em um elemento que não possui filho.</td></tr>
+                                    <tr><td><code>:checked</code></td><td><code>input:checked</code></td><td>Representa um elemento (como radio, checkbox e options) que foi selecionado.</td></tr>
+                                </tbody>
+                            </table>
+                            <h3 style="margin-top: 1.5em; margin-bottom: 0.5em; font-size: 1.2em; text-align: center;">Demonstrações Práticas Interativas</h3>
+                        
+                            <div class="exemplo-link">
+                        
+                                <div class="exemplo-card">
+                                    <strong>Links e Botões</strong>
+                                    <p style="font-size: 0.6em; margin-bottom: 1em;">Passe o mouse e clique para ver :hover e :active</p>
+                                    <a href="#t3" class="botao-link">Tag &lt;a&gt;</a>
+                                    <button class="botao-exemplo" style="margin-top: 15px;">Tag &lt;button&gt;</button>
+                                </div>
+                                <div class="exemplo-card">
+                                    <strong>Seletores de Filhos</strong>
+                                    <p style="font-size: 0.6em; margin-bottom: 0.5em;">Simulando a ordem dos elementos</p>
+                                    <div class="card-exemplo">Item 1 (:first-child)</div>
+                                    <div class="card-exemplo">Item 2 (:nth-child)</div>
+                                    <div class="card-exemplo">Item 3 (:last-child)</div>
+                                </div>
+                                <div class="exemplo-card">
+                                    <strong>Elemento Vazio</strong>
+                                    <p style="font-size: 0.6em; margin-bottom: 0.5em;">A div tracejada abaixo usa a classe .vazio-exemplo e ilustra o :empty</p>
+                                    <div class="vazio-exemplo"></div>
+                                </div>
+                                <div class="exemplo-card">
+                                    <strong>Inputs de Formulário</strong>
+                                    <p style="font-size: 0.6em; margin-bottom: 0.5em;">Interaja com os inputs abaixo</p>
+                                    <div class="card-exemplo">
+                                        <label><input type="checkbox"> Estado :checked</label>
+                                    </div>
+                                    <div class="card-exemplo">
+                                        <input type="text" placeholder="Clique aqui para :focus" style="width: 90%; padding: 5px; border: 1px solid #19f8fc;">
+                                    </div>
+                                </div>
+                            </div>
+                                        </div>
+                        
+                                        <div class="codigo">
+                                       <span style="color: #19F8FC; font-weight: bold; display: block; margin-bottom: 0.5em;">&lt;/&gt; ESTRUTURA HTML:</span>
+                        <pre style="font-family: monospace; font-size: 0.6em; overflow-x: auto;">
+                        &lt;div class="exemplo-link"&gt;
+                            &lt;div class="exemplo-card"&gt;
+                                &lt;a class="botao-link"&gt;&lt;/a&gt;
+                                &lt;button class="botao-exemplo"&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="exemplo-card"&gt;
+                                &lt;div class="card-exemplo"&gt;Filho 1&lt;/div&gt;
+                                &lt;div class="card-exemplo"&gt;Filho 2&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="exemplo-card"&gt;
+                                &lt;div class="vazio-exemplo"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;</pre>
+                        
+                                <hr style="margin: 1em 0; border: 0; border-top: 1px solid #333;">
+                        
+                                <span style="color: #19FCB4; font-weight: bold; display: block; margin-bottom: 0.5em;"># ESTILIZAÇÃO CSS APLICADA:</span>
+                        <pre style="font-family: monospace; font-size: 0.6em; overflow-x: auto;">
+                        .exemplo-link {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                            gap: 15px;
+                        }
+                        .exemplo-card {
+                            background-color: #e6f7f8;
+                            border: 2px solid #19f8fc;
+                            padding: 1em;
+                            border-radius: 0.75em;
+                        }
+                        .card-exemplo {
+                            padding: 0.5em;
+                            background-color: #fff;
+                            border: 1px solid #94d2ff;
+                            border-radius: 0.5em;
+                        }
+                        .vazio-exemplo {
+                            min-height: 3em;
+                            border: 2px dashed #ef4444;
+                            border-radius: 0.5em;
+                        }</pre>
+                            </div>
+                            </div>
+                        
+                        </div>
                     </div>
-                </div>
+
                 <div class="nav">
                     <a href="#t2" class="anterior">Anterior</a>
                     <a href="#t4" class="próximo">Próximo</a>
@@ -162,7 +245,40 @@ a:active { color: #0000FF; }</code></br></pre>
             <section id="t6" class="tópico">
                 <div class="tópico6_assunto">
                     <div class="card-header">
-                        <h2>06. Conclusão e Perguntas.</h2>
+                        <h2>06. Referências Bibliográficas.</h2>
+                    </div>
+                    <hr>
+                    <div class="card-content">
+                        <p>Para aprofundar seus conhecimentos sobre pseudo-classes e pseudo-elementos CSS, consulte as seguintes referências:</p>
+                        <ul style="list-style: disc; margin-left: 2em;">
+                            <li><strong>MDN Web Docs - CSS Pseudo-classes</strong><br>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" target="_blank" class="botao-link" style="display: inline; padding: 5px 10px; margin: 5px 0;">Acessar</a>
+                            Documentação completa sobre todas as pseudo-classes CSS com exemplos práticos.</li>
+                            <li><strong>MDN Web Docs - CSS Pseudo-elementos</strong><br>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements" target="_blank" class="botao-link" style="display: inline; padding: 5px 10px; margin: 5px 0;">Acessar</a>
+                            Guia detalhado sobre pseudo-elementos e suas aplicações.</li>
+                            <li><strong>W3C CSS Selectors Level 3</strong><br>
+                            <a href="https://www.w3.org/TR/selectors-3/" target="_blank" class="botao-link" style="display: inline; padding: 5px 10px; margin: 5px 0;">Acessar</a>
+                            Especificação oficial do W3C para seletores CSS.</li>
+                            <li><strong>CSS Tricks - A Complete Guide to Grid</strong><br>
+                            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="botao-link" style="display: inline; padding: 5px 10px; margin: 5px 0;">Acessar</a>
+                            Exemplos práticos e avançados de CSS moderno.</li>
+                            <li><strong>Can I Use - Browser Support</strong><br>
+                            <a href="https://caniuse.com/" target="_blank" class="botao-link" style="display: inline; padding: 5px 10px; margin: 5px 0;">Acessar</a>
+                            Verificar suporte de pseudo-classes em diferentes navegadores.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a href="#t5" class="anterior">Anterior</a>
+                    <a href="#t7" class="próximo">Próximo</a>
+                </div>
+            </section>
+
+            <section id="t7" class="tópico">
+                <div class="tópico7_assunto">
+                    <div class="card-header">
+                        <h2>07. Conclusão e Perguntas.</h2>
                     </div>
                     <hr>
                     <div class="card-content">
@@ -174,7 +290,7 @@ a:active { color: #0000FF; }</code></br></pre>
                     </div>
                 </div>
                 <div class="nav">
-                    <a href="#t5" class="anterior">⬅ Anterior</a>
+                    <a href="#t6" class="anterior">⬅ Anterior</a>
                     <a href="index.html" class="próximo">Fim (Menu)</a>
                 </div>
             </section>
