@@ -65,7 +65,9 @@ section:hover{
     transform: translateY(-0.5em);
 }
 body{
-    background-color: var(--bg-cor);
+    background-image: url(vecteezy_modern-low-poly-light-blue-triangle-shapes-background_7937895.jpg);
+    border-image: auto;
+
 }
 
 .menu-container{
