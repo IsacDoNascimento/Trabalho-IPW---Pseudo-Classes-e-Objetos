@@ -140,15 +140,20 @@ a:active { color: #0000FF; }</code></br></pre>
                         <pre style="font-family: monospace; font-size: 0.6em; overflow-x: auto;">
                         &lt;div class="exemplo-link"&gt;
                             &lt;div class="exemplo-card"&gt;
-                                &lt;a class="botao-link"&gt;&lt;/a&gt;
-                                &lt;button class="botao-exemplo"&gt;&lt;/button&gt;
+                                &lt;a href="#t3" class="botao-link"&gt;Tag &lt;a&gt;&lt;/a&gt;
+                                &lt;button class="botao-exemplo"&gt;Tag &lt;button&gt;&lt;/button&gt;
                             &lt;/div&gt;
                             &lt;div class="exemplo-card"&gt;
-                                &lt;div class="card-exemplo"&gt;Filho 1&lt;/div&gt;
-                                &lt;div class="card-exemplo"&gt;Filho 2&lt;/div&gt;
+                                &lt;div class="card-exemplo"&gt;Item 1 (:first-child)&lt;/div&gt;
+                                &lt;div class="card-exemplo"&gt;Item 2 (:nth-child(2))&lt;/div&gt;
+                                &lt;div class="card-exemplo"&gt;Item 3 (:last-child)&lt;/div&gt;
                             &lt;/div&gt;
                             &lt;div class="exemplo-card"&gt;
                                 &lt;div class="vazio-exemplo"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="exemplo-card"&gt;
+                                &lt;label&gt;&lt;input type="checkbox"&gt; Estado :checked&lt;/label&gt;
+                                &lt;input type="text" placeholder="Clique aqui para :focus" class="input-focus"&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;</pre>
                         
@@ -166,17 +171,55 @@ a:active { color: #0000FF; }</code></br></pre>
                             border: 2px solid #19f8fc;
                             padding: 1em;
                             border-radius: 0.75em;
+                            min-height: 160px;
+                        }
+                        .botao-link,
+                        .botao-exemplo {
+                            display: inline-block;
+                            padding: 0.75em 1em;
+                            border: none;
+                            border-radius: 0.5em;
+                            background-color: #19f8fc;
+                            color: #1b2b3b;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                        }
+                        .botao-link:hover,
+                        .botao-exemplo:hover {
+                            background: linear-gradient(135deg, #2563eb, #38bdf8);
+                            color: #fff;
+                        }
+                        .botao-exemplo:active {
+                            transform: translateY(1px);
+                            background-color: #0f7db3;
                         }
                         .card-exemplo {
-                            padding: 0.5em;
+                            padding: 0.75em;
                             background-color: #fff;
                             border: 1px solid #94d2ff;
                             border-radius: 0.5em;
+                            margin-top: 0.5em;
+                        }
+                        .card-exemplo:first-child {
+                            font-weight: bold;
+                        }
+                        .card-exemplo:nth-child(2) {
+                            background-color: #e9f5ff;
+                        }
+                        .card-exemplo:last-child {
+                            border-color: #19f8fc;
                         }
                         .vazio-exemplo {
                             min-height: 3em;
                             border: 2px dashed #ef4444;
                             border-radius: 0.5em;
+                        }
+                        input[type="text"]:focus {
+                            outline: 2px solid #19f8fc;
+                            box-shadow: 0 0 0 4px rgba(25, 248, 252, 0.2);
+                        }
+                        input[type="checkbox"]:checked {
+                            accent-color: #19f8fc;
                         }</pre>
                             </div>
                     </div>
