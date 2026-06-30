@@ -24,10 +24,17 @@ header{
     border-bottom: var(--cor-6) solid 0.25em;
 }
 
+/* Marcação */
+header:hover{
+    padding: 3.5em;
+}
+
 nav{
     justify-content: center;
 }
 
+
+/* Marcação */
 .flex-linha{
     font-size: 1.5em;
     display: flex;
@@ -36,9 +43,6 @@ nav{
     justify-content: center;
 }
 
-header:hover{
-    padding: 3.5em;
-}
 
 #icon-code{
     transition: all 1s ease-in-out;
@@ -78,10 +82,11 @@ section{
 section:hover{
     transform: translateY(-0.5em);
 }
+
+/* Marcação */
 body{
     background-image: url(vecteezy_modern-low-poly-light-blue-triangle-shapes-background_7937895.jpg);
     border-image: auto;
-
 }
 
 .menu-container{
@@ -139,6 +144,7 @@ a{
     transition: all 1s ease-in-out;
 }
 
+/* Marcação */
 a:active{
     background-color: #6eeca7;
 }
